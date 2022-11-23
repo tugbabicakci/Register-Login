@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Kullanıcı Giriş</title>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <div class="login-form">
+                <input type="name" id="name" placeholder="Kullanıcı adınızı girin" />
+                <input type="password" id="sifre" placeholder="Şifrenizi adınızı girin" />
+                <button onclick="giris()">Giriş Yap</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function giris(){
+            const kuladi="tugba";
+            const sif="123";
+
+            var name=document.getElementById("name").value;
+            var sifre=document.getElementById("sifre").value;
+
+            if(name == kuladi && sifre==sif ){
+                alert("Başarılı giriş..");
+
+            }else{
+                alert("Kullanıcı adı veya şifre yanlış !");
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Kullanıcı Giriş</title>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form">
+                <input type="text" id="isim" placeholder="İsminizi giriniz" />
+                <input type="text" id="soyisim" placeholder="Soyadınızı giriniz" />
+                <input type="text" id="tel" placeholder="Telefon giriniz" />
+                <input type="text" id="email" placeholder="Emailinizi giriniz" />
+                <input type="password" id="sifre" placeholder="****" />
+                <button onclick="login()">Kullanıcı oluştur</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function login(){
+        event.preventDefault();
+                
+        var name=document.getElementById("isim").value;
+        var soyad=document.getElementById("soyisim").value;
+        var email=document.getElementById("email").value;
+        var tel=document.getElementById("tel").value;
+        var sifre=document.getElementById("sifre").value;
+
+            alert(name+" "+soyad+" "+tel+" "+email+" "+sifre);
+        }
+       
+
+    </script>
+</body>
+</html>
